@@ -1,0 +1,31 @@
+{
+  "Name": "2_1_weeklyView",
+  "Version" : "1",
+  "Elements": [
+    { "ElementText": ["Number of actions", "All sources", "Count"], "Condition": "2.1.weeklyView|*|allSources_allActions" },
+    { "ElementText": ["Number of actions", "Outbound voice", "Count"], "Condition": "2.1.weeklyView|*|VOICE_allActions" },
+    { "ElementText": ["Number of actions", "Outbound SMS", "Count"], "Condition": "2.1.weeklyView|*|SMS_allActions" },
+    { "ElementText": ["Number of actions", "Website visits", "Count"], "Condition": "2.1.weeklyView|*|siteVisit_allActions" },
+    { "ElementText": ["Number of actions", "Priority Moments", "Count"], "Condition": "2.1.weeklyView|*|tefPMAccept_allActions" },
+    { "ElementText": ["Number of customers with actions", "All sources", "Count"], "Condition": "2.1.weeklyView|*|allSources_allCustomers" },
+    { "ElementText": ["Number of customers with actions", "Outbound voice", "Count"], "Condition": "2.1.weeklyView|*|VOICE_allCustomers" },
+    { "ElementText": ["Number of customers with actions", "Outbound SMS", "Count"], "Condition": "2.1.weeklyView|*|SMS_allCustomers" },
+    { "ElementText": ["Number of customers with actions", "Website visits", "Count"], "Condition": "2.1.weeklyView|*|siteVisit_allCusto,mers" },
+    { "ElementText": ["Number of customers with actions", "Priority Moments", "Count"], "Condition": "2.1.weeklyView|*|tefPMAccept_allCustomers" },
+    { "ElementText": ["Number of topic-generating actions", "All sources", "Count"], "Condition": "2.1.weeklyView|*|allSources_topicGeneratingActions" },
+    { "ElementText": ["Number of topic-generating actions", "Outbound voice", "Count"], "Condition": "2.1.weeklyView|*|VOICE_topicGeneratingActions" },
+    { "ElementText": ["Number of topic-generating actions", "Outbound SMS", "Count"], "Condition": "2.1.weeklyView|*|SMS_topicGeneratingActions" },
+    { "ElementText": ["Number of topic-generating actions", "Website visits", "Count"], "Condition": "2.1.weeklyView|*|siteVisit_topicGeneratingActions" },
+    { "ElementText": ["Number of topic-generating actions", "Priority Moments", "Count"], "Condition": "2.1.weeklyView|*|tefPMAccept_topicGeneratingActions" },
+    { "ElementText": ["Customers with topic-generating actions", "All sources", "Count"], "Condition": "2.1.weeklyView|*|allSources_topicGeneratingCustomers" },
+    { "ElementText": ["Customers with topic-generating actions", "Outbound voice", "Count"], "Condition": "2.1.weeklyView|*|VOICE_topicGeneratingCustomers" },
+    { "ElementText": ["Customers with topic-generating actions", "Outbound SMS", "Count"], "Condition": "2.1.weeklyView|*|SMS_topicGeneratingCustomers" },
+    { "ElementText": ["Customers with topic-generating actions", "Website visits", "Count"], "Condition": "2.1.weeklyView|*|siteVisit_topicGeneratingCustomers" },
+    { "ElementText": ["Customers with topic-generating actions", "Priority Moments", "Count"], "Condition": "2.1.weeklyView|*|tefPMAccept_topicGeneratingCustomers" },
+    { "ElementText": ["Number of customer-topic pairs", "All sources", "Count"], "Condition": "2.1.weeklyView|*|allSources_CTPs" },
+    { "ElementText": ["Number of customer-topic pairs", "Outbound voice", "Count"], "Condition": "2.1.weeklyView|*|VOICE_CTPs" },
+    { "ElementText": ["Number of customer-topic pairs", "Outbound SMS", "Count"], "Condition": "2.1.weeklyView|*|SMS_CTPs" },
+    { "ElementText": ["Number of customer-topic pairs", "Website visits", "Count"], "Condition": "2.1.weeklyView|*|siteVisit_CTPs" },
+    { "ElementText": ["Number of customer-topic pairs", "Priority Moments", "Count"], "Condition": "2.1.weeklyView|*|tefPMAccept_CTPs" }
+  ]
+}
