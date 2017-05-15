@@ -1,0 +1,16 @@
+{
+  "Name": "3_DataIngestion",
+  "Version" : "1",
+  "Elements": [
+    { "ElementText": ["Data Feed Record Counts *", "DEVICE"], "Condition": "DEVICE_TEFUK" },
+    { "ElementText": ["Data Feed Record Counts *", "EVENTSUM"], "Condition": "EVENTSUM_TEFUK" }
+    { "ElementText": ["Data Feed Record Counts *", "HADOOP WEBLOGS"], "Condition": "HADOOP_WEBLOGS_TEFUK" },
+    { "ElementText": ["Data Feed Record Counts *", "PERMISSIONS"], "Condition": "PERMISSIONS_TEFUK" },
+    { "ElementText": ["Data Feed Record Counts *", "PRIORITY"], "Condition": "DEVICE_TEFUK" },
+    { "ElementText": ["Data Feed Record Counts *", "PRODUCT SERVICES"], "Condition": "PRODUCT_SERVICES_TEFUK" },
+    { "ElementText": ["Data Feed Record Counts *", "PROFILE EXCLUSION"], "Condition": "PROFILE_EXCLUSION_TEFUK" },
+    { "ElementText": ["Data Feed Record Counts *", "PROFILE"], "Condition": "PROFILE_TEFUK" },
+    { "ElementText": ["Data Feed Record Counts *", "SEGMENTS"], "Condition": "SEGMENTS_TEFUK" },
+    { "ElementText": ["Data Feed Record Counts *", "WIFI WEBLOGS"], "Condition": "WIFI_WEBLOGS_TEFUK" }
+   ]
+}
