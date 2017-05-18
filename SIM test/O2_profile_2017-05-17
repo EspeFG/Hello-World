@@ -1,0 +1,152 @@
+GET _search
+{
+  "query": {
+     "match": {"_id":"447702495418"}
+  },
+  "size": 5
+}
+
+
+
+{
+   "took": 11,
+   "timed_out": false,
+   "_shards": {
+      "total": 600,
+      "successful": 600,
+      "failed": 0
+   },
+   "hits": {
+      "total": 1,
+      "max_score": 1,
+      "hits": [
+         {
+            "_index": "dashboard_123456789_1494491559",
+            "_type": "profile",
+            "_id": "447702495418",
+            "_score": 1,
+            "_source": {
+               "ons": null,
+               "browsedO2Tickets": false,
+               "permOptOutLocationComms": true,
+               "allowAnalyticsPartnerTargeting": false,
+               "browsedO2ShopComUpgrades": false,
+               "activeUser": true,
+               "topics": [
+                  "travel guide books",
+                  "cooks",
+                  "french cuisine",
+                  "travel & holidays",
+                  "chefs",
+                  "restaurant guides",
+                  "cuisine",
+                  "michelin guide",
+                  "consumer guides",
+                  "interest in food",
+                  "michelin",
+                  "hotel guide books",
+                  "restaurants & take away"
+               ],
+               "permIsDeceased": false,
+               "dataSummary": 0,
+               "location": {
+                  "city": "Portsmouth",
+                  "outcode": "PO5",
+                  "countryCoords": "54.0,-2.0",
+                  "country": "GB",
+                  "outcodeCoords": "50.778136,-1.088809",
+                  "cityCoords": "50.79899,-1.09125"
+               },
+               "productsHeld": [
+                  "O2 Unlimited",
+                  "BlackBerry",
+                  "Simplicity",
+                  "O2 Travel"
+               ],
+               "email": null,
+               "contactedCarphoneWarehouse": false,
+               "permDisplayOnDeck": true,
+               "spend": 13.34,
+               "dataUsageProjectedToExceed80Pct": false,
+               "cohort": "unassigned",
+               "permMobileServs": true,
+               "contactedEE": false,
+               "permOptOutBonVoyage": true,
+               "dataThreshold80pcCurrent": "Not Exceeded",
+               "callMarketingContactFreq": "not contacted",
+               "permPhone": true,
+               "isHeadOfHousehold": null,
+               "permResearchOptOut": true,
+               "allowTrafficBasedTargeting": false,
+               "permAllMktg": true,
+               "contractEndMonths": "No contract",
+               "contactedTalkTalk": false,
+               "permO2WifiOptOut": true,
+               "currentTenure": 0,
+               "permIsVip": false,
+               "monthsSinceJoining": "0-6",
+               "roamedCountryCodes": [
+                  "0"
+               ],
+               "age": null,
+               "permDisplayOffDeck": false,
+               "smsMarketingContactFreq": "contacted",
+               "permSMS": true,
+               "dataBundleExceeded": false,
+               "allowMktgCustomerTargeting": false,
+               "permAllChannel": true,
+               "permO2More": false,
+               "browsedO2ShopCom": false,
+               "browsedAccessories": false,
+               "browsedO2Recycle": false,
+               "permOptOutSMSMarcomm": true,
+               "operatingSystem": "iOS",
+               "permEmail": true,
+               "ageGroup": "45 to 54",
+               "browsedTablets": false,
+               "contactedBT": false,
+               "permHasGoneAway": false,
+               "permPriorityMoments": false,
+               "myO2ProductStatus": "NOT REGISTERED",
+               "householdComposition": null,
+               "cpwManaged": false,
+               "priorityMomentsProductStatus": "Not Registered",
+               "priorityMoments": [],
+               "permNoMktg": false,
+               "priorityAppRegistrationStatus": "Not Registered",
+               "segments": [],
+               "permMail": true,
+               "preferences": [],
+               "hasSmartphone": true,
+               "categories": [
+                  "interest in food",
+                  "restaurants & take away",
+                  "travel & holidays"
+               ],
+               "dataThreshold80pc3mths": "Not Exceeded",
+               "validEmailAddress": false,
+               "uid": "447702495418",
+               "browsedBilling": false,
+               "browsedWearables": false,
+               "isHouseholdWithChildren": null,
+               "permPartial": false,
+               "hasMobileBroadband": false,
+               "permOptOutAllComms": false,
+               "affluenceLevel": null,
+               "siteId": 123456789,
+               "pAndLSegments": "paym",
+               "browsedO2Shop": false,
+               "simOnlyContract": true,
+               "browsedGuru": false,
+               "prepayStatus": null,
+               "permOptOutSMSPriorityTickets": true,
+               "mmsMarketingContactFreq": "not contacted",
+               "device": null,
+               "contract": "Contract",
+               "contractTerm": 12,
+               "gender": "MALE"
+            }
+         }
+      ]
+   }
+}
