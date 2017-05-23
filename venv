@@ -1,0 +1,17 @@
+##CREATING A VIRTUAL ENVIRONMENT 
+
+#1.	Create a virtual environment for a project:
+
+$ cd my_project_folder
+$ virtualenv my_project
+
+#2. source my_project/bin/activate
+
+$(my_project)Your-Computer:your_project UserName$)
+
+
+#3. Deactivate
+
+-Don't forget to install the right version of every program 
+you are going to need inside the virtual environment you have created. 
+Otherwise it will default to the ones outside the venv.
