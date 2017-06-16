@@ -1,0 +1,53 @@
+import requests
+import json
+
+SEARCH_URL = "http://localhost:9200/profiles_o2/_search?pretty=true"
+MAPPING_URL = "http://localhost:9200/profiles_o2/_mapping/profile?pretty=true"
+
+query = {'aggs': {'rows': {'aggs': {'rows': {'filters': {'filters': {'Base': {'exists': {'field': 'gender'}},
+       'Female': {'term': {'gender': 'FEMALE'}},
+       'Male': {'term': {'gender': 'MALE'}}}}}},
+   'filters': {'filters': {'Base': {'exists': {'field': 'gender'}},
+     'Female': {'term': {'gender': 'FEMALE'}},
+     'Male': {'term': {'gender': 'MALE'}}}}}},
+ 'size': 0}
+ 
+ 
+ 
+def searchMappings(searchTerm):
+   res = requests.get(MAPPING_URL).json()
+   return [t for t in list(list(res.values())[0]["mappings"]["profile"]["properties"].items()) if searchTerm in t[0] ]
+
+def runTermQuery(fieldName):
+    data = {
+        "size" : 0,
+        "aggs" : {
+           "termQuery" : {
+                   "terms" : { "field" : fieldName, "size" : "30000" }
+         }
+        }
+    }
+    return requests.post(SEARCH_URL, data=json.dumps(data)).json()
+
+def searchTopics(searchTerm):
+    return [t for t in runTermQuery("topics")["aggregations"]["termQuery"]["buckets"]
+         if searchTerm.lower() in t["key"] ]
+
+def getTermExpression(fieldName, termName):
+    return '{ "term" : { "gender" : "MALE" } }'
+
+def buildAnd(expressions):
+    return { "bool" : { "must" : expressions } }
+
+def buildOr(expressions):
+    return { "bool" : { "should" : expressions } }
+    
+response = requests.post(SEARCH_URL, data=json.dumps(query))
+response.json()
+
+path = "/Users/espe/espe/Def_files"
+    
+ --------   
+searchMappings("age")
+runTermQuery("ageGroup")
+writeVariableToFile(variableFromTerms("ageGroup", "ageGroup", "Age Bands"), path)
