@@ -51,7 +51,7 @@ def PM_comp(priority, MyPM):
     return (priority.drop(['durationInSeconds', 'direction'],axis=1), pd.read_excel(MyPM))
 
 def web_comp(O2web, myweb):
-    '''Compares the actions O2web versus my recorded actions for web'''
+    '''Compares the O2web actions versus my recorded actions for web'''
     website = pd.read_excel(myweb)
     website.columns = ["date", "value"]
     website.groupby(lambda x: website['date'][x].month)
@@ -67,5 +67,13 @@ def web_comp(O2web, myweb):
     website_visits1['myFlag'] = True
     df_all = web1.merge(website_visits1, on=['date','value'], how='outer')
     return df_all[df_all.o2Flag.isnull()]
+
+def call_comp(calls, myCalls):
+    '''Compares the actions O2web versus my recorded actions for web'''
+    call_actions = pd.read_excel(myCalls)
+    o2calls =[]
+    for i in calls.value:
+        o2calls.append(i)
+    return call_actions.loc[~call_actions['business'].isin(o2calls)]
     
     
