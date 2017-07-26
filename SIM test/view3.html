@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEBSITE</title>
+</head>
+<body>
+
+<h2>Website Visits</h2>
+{% for table in tables %}
+
+<h2>{{titles[loop.index-1]}}</h2>
+{{ table|safe }}
+{% endfor %}
+
+
+<script type="text/javascript">
+        document.querySelectorAll('[data-time-consuming-link]').forEach(function(_) {
+            _.addEventListener('click', function(e) {
+              document.getElementById('loading').style.display = 'block';
+              document.getElementById('container').style.display = 'none';
+            })
+        })
+    </script>
+
+
+</body>
+</html>
+
+<img src="/static/ihq.jpg" 
